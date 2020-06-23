@@ -3,6 +3,15 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
+function roullete(){
+    console.log("Test Roullete");
+}
+function getRandomInt() {
+  console.log("Getting Random Int");
+  var num =  Math.floor(Math.random() * Math.floor(3));
+  console.log(num);
+  return num;
+}
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /test/;
